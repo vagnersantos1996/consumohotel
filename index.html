@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Sistema de consumo</title>
+		<link rel="stylesheet" href="css.css">
+	</head>
+	<body>
+		<section>
+			<h1>Cadastro de consumo</h1>
+			<form id="form-consumo" method="POST">
+				<div id="campo_id_reserva">
+					<label for="id_reserva">
+						Id da reserva
+					</label>
+					<input type="text" name="id_reserva" id="id_reserva" class="input_int" required>
+				</div>
+				<div class="container_produto" data-num="1">
+					<div>1.</div>
+					<ul>
+						<li>
+							<label for="nome_produto">Nome do produto</label>
+							<input type="text" name="nome_produto" id="nome_produto" required>
+						</li>
+						<li>
+							<label for="valor_unitario">Valor unitário</label>
+							<input type="text" name="valor_unitario" id="valor_unitario" class="input_decimal" required>
+						</li>
+						<li>
+							<label for="quantidade">Quantidade</label>
+							<input type="text" name="quantidade" id="quantidade" class="input_int" required>
+						</li>
+					</ul>
+				</div>
+				<div class="botoes">
+					<input type="button" value="+ Produto" id="add_produto" />
+					<input type="submit" value="Salvar consumo" id="enviar_formulario" />
+				</div>
+			</form>
+		</section>
+	</body>
+	<script src="jquery.js"></script>
+	<script src="jquery.mask.js"></script>
+	<script src="main.js"></script>
+</html>

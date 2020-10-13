@@ -1,0 +1,123 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #333;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#campo_id_reserva {
+	max-width: 1000px;
+	width: 90%;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+#campo_id_reserva > input {
+	border: 1px solid #666;
+	border-radius: 5px;
+	width: 50px;
+	font-size: 1em;
+	padding: 5px;
+}
+
+.container_produto {
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	max-width: 1000px;
+	width: 90%;
+	display: flex;
+	align-items: baseline;
+}
+
+.container_produto > div {
+	color: #333333;
+	font-size: 1em;
+}
+
+.botoes {
+	max-width: 1000px;
+	margin: 10px auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.botoes #add_produto {
+	margin-right: 10px;
+}
+
+.botoes #enviar_formulario {
+	margin-left: 10px;
+}
+
+.botoes > input {
+	padding: 10px;
+	border: 2px solid #333;
+	color: #333;
+	background: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.25s;
+	font-size: 1em;
+}
+
+.botoes > input#add_produto {
+	border: 2px solid #27AF2E;
+	color: #27AF2E;
+}
+
+.botoes > input:hover {
+	background-color: #333;
+	color: #FFF;
+}
+
+.botoes > input#add_produto:hover {
+	background-color: #27AF2E;
+	color: #FFF;
+}
+
+ul {
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	flex-grow: 1;
+}
+
+ul > li {
+	width: 33.3%;
+	padding: 15px 10px;
+}
+
+ul > li.completa {
+	width: 100%;
+}
+
+ul > li > label,
+ul > li > input[type="text"] {
+	display: block;
+	padding: 5px;
+}
+
+ul > li > label {
+	padding-left: 0;
+}
+
+ul > li > input[type="text"] {
+	width: 90%;
+	border: 1px solid #666;
+	border-radius: 5px;
+}
